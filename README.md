@@ -182,6 +182,6 @@
 
 ![29](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/aeb11fe2-d198-4fd9-a752-f506dae42c53)
 
-## Success!!!! The website is still functional and the changes we made previously, are now available on the website.
+### Success!!!! The website is still functional and the changes we made previously, are now available on the website.
 
-## This concludes the first project for Level Up in Tech where we learned how to host a static website via S3 then add CloudFront for better availability, security and improved website performance because of the edge locations.
+## Hence, This concludes the first project for Level Up in Tech where we learned how to host a static website via S3 then add CloudFront for better availability, security and improved website performance because of the edge locations.
