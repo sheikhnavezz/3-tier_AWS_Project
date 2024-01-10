@@ -1,7 +1,8 @@
 # 3-tier_AWS_Project
+
 # Hosting a static website on AWS S3 using CloudFront
 
-## Tier 1 FOUNDATION :
+# Tier 1 FOUNDATION :
 
 ### Scenario Part 1:
 #### Our Website is an imaginary fintech startup that provides banking services to its clients. The main channel for acquiring new customers and facilitating interaction with the bank is the company’s website. Presently, the website is hosted on a server located on-premises, necessitating an IT team exclusively dedicated to its management and upkeep. This arrangement incurs supplementary expenses for the company and introduces an extra layer of intricacy to the infrastructure.
@@ -122,7 +123,7 @@
 ![19](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/daa9ccb6-e168-4f9f-b8f3-65d3343ba51b)
 
 
-# Hence, The website is now working via CloudFront and it is using HTTPS!!!
+# Therefore, The website is now working via CloudFront and it is using HTTPS!!!
 (Now, to see if we are able to meet the redirection requirement. Click in the address bar and change the HTTPS to HTTP then hit enter. Success!!!! HTTP is being redirected to HTTPS.)
 
 # Step 15: The last step in this tier to is verify that cache is working. 
@@ -150,7 +151,9 @@
 
 ## We have now satisfied all requirements for Tier 2. Time to tackle Tier 3.
 
+
 # Now, Time for 3rd Tier:
+
 ## The goal for this tier is to improve security by ensuring that no end users can go around CloudFront and access the S3 bucket directly while verifying that the website is still accessible after whatever changes are made.
 
 ## We took care of some of this in tier 2 when we enabled Origin access control and applied the bucket policy in S3 which gives the bucket access to only CloudFront.
