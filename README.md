@@ -84,7 +84,7 @@
 
 ![10 1](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/3822276b-fbca-4c9f-9151-5bef5f82261b)
 
-#### (Ignore the Origin access control is required message for now. This gets taken care of once you apply the bucket policy in S3)
+### (Ignore the Origin access control is required message for now. This gets taken care of once you apply the bucket policy in S3)
 
 # Step: 9 change the option to Redirect HTTP to HTTPS.
 
@@ -106,7 +106,6 @@
 
 ![15](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/5d470853-80ca-4473-97f8-fe32471cab90)
 
-
 ![16](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/d4b85041-ebff-4aba-a40f-5eee2b76999c)
 
 
@@ -114,11 +113,11 @@
 
 ![17](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/c29642f3-371c-4c1c-9ddd-b66534360efc)
 
-### (click) your distribution Id > settings > (click) edit > Scroll down to Default root object and type in index.html then save the changes.
+## (click) your distribution Id > settings > (click) edit > Scroll down to Default root object and type in index.html then save the changes.
 
 ![18](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/263fd750-3cee-4a8b-9b8b-e5779e0e41c9)
 
-### goto to the distribution and copy the distribution domain name and paste in the incognito tab > There you will see your website. 
+## goto to the distribution and copy the distribution domain name and paste in the incognito tab > There you will see your website. 
 
 ![19](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/daa9ccb6-e168-4f9f-b8f3-65d3343ba51b)
 
@@ -147,9 +146,9 @@
 ![23](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/42a77b6a-1f99-4fe0-9834-f257ae1270db)
 
 
-### Which means cache is working properly!!!!
+## Which means cache is working properly!!!!
 
-### We have now satisfied all requirements for Tier 2. Time to tackle Tier 3.
+## We have now satisfied all requirements for Tier 2. Time to tackle Tier 3.
 
 # Now, Time for 3rd Tier:
 # The goal for this tier is to improve security by ensuring that no end users can go around CloudFront and access the S3 bucket directly while verifying that the website is still accessible after whatever changes are made.
@@ -171,13 +170,17 @@
 
 ![26](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/050b2e51-6344-4a7b-862a-d5ce451cf121)
 
+# You should now see that the Publicly Accessible message in your bucket is no longer there. Indicating that we are more secure right now. But let’s test it out. We should get access denied messages when using both bucket website endpoint and object URL’s. Open an incognito browser tab and test each link.
+
+![27](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/a08f48fc-4101-4aac-ac23-d11a048f36a3)
+
+![28](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/e4043368-bba8-4033-83a9-7e4e421ce368)
 
 # Step 21: Now that we made the changes to secure our S3 bucket, we need to find out if any of these changes affected the website from functioning using the CloudFront URL.
 
 # Go to the CloudFront URL and paste into an incognito tab
 
-![Uploading 29.png…]()
-
+![29](https://github.com/sheikhnavezz/3-tier_AWS_Project/assets/134357661/aeb11fe2-d198-4fd9-a752-f506dae42c53)
 
 ## Success!!!! The website is still functional and the changes we made previously, are now available on the website.
 
