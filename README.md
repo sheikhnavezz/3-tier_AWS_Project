@@ -151,7 +151,7 @@
 ## We have now satisfied all requirements for Tier 2. Time to tackle Tier 3.
 
 # Now, Time for 3rd Tier:
-# The goal for this tier is to improve security by ensuring that no end users can go around CloudFront and access the S3 bucket directly while verifying that the website is still accessible after whatever changes are made.
+## The goal for this tier is to improve security by ensuring that no end users can go around CloudFront and access the S3 bucket directly while verifying that the website is still accessible after whatever changes are made.
 
 ## We took care of some of this in tier 2 when we enabled Origin access control and applied the bucket policy in S3 which gives the bucket access to only CloudFront.
 
